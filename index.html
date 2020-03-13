@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/mdui/0.4.3/css/mdui.min.css">
+    <script src="https://cdn.bootcss.com/mdui/0.4.3/js/mdui.min.js"></script>
+    <script type="text/javascript" src="generator.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no">
+    <meta name="robots" content="noindex, nofollow">
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="#03A9F4">
+    <title>Fushicho</title>
+</head>
+
+
+<body class="mdui-theme-primary-light-blue mdui-appbar-with-toolbar">
+
+<div class="mdui-appbar mdui-appbar-fixed">
+    <div class="mdui-toolbar mdui-color-theme">
+        <a class="mdui-typo-headline mdui-text-color-white" style="font-size:20px">Fushicho</a>
+    </div>
+</div>
+
+<div>
+    <div class="mdui-container">
+        <div class="mdui-row">
+            <div class="mdui-col-md-6 mdui-col-offset-md-3 mdui-m-t-2">
+                <div class="mdui-card mdui-m-t-0 mdui-m-b-2">
+                    <div class="mdui-card-content mdui-m-t-1 mdui-m-p-0 mdui-p-t-0">
+                        <div class="mdui-row">
+                            <div class="mdui-col-xs-12 mdui-col-sm-12 mdui-m-b-2">
+                                <div class="mdui-textfield mdui-p-t-1 mdui-textfield-not-empty">
+                                    <label class="mdui-textfield-label">事件名称</label>
+                                    <input class="mdui-textfield-input" type="text" value="新冠肺炎" id="eventName"
+                                           disabled>
+                                </div>
+                                <div class="mdui-textfield mdui-p-t-1 mdui-textfield-not-empty">
+                                    <label class="mdui-textfield-label" disabled>字数</label>
+                                    <input class="mdui-textfield-input" type="text" value="自动" id="wordCount" disabled>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="mdui-row">
+                            <div class="mdui-col-xs-12 mdui-col-sm-12">
+                                <button id="generate"
+                                        class="mdui-btn mdui-btn-raised mdui-ripple mdui-color-pink mdui-float-right"
+                                        mdui-dialog="{target: '#generatedArticleDialog', history: false, modal: true}" onclick="generatedArticle();">
+                                    生成
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="mdui-dialog" id="generatedArticleDialog">
+    <div class="mdui-dialog-title mdui-p-b-0">生成内容</div>
+    <div class="mdui-dialog-content mdui-p-y-0">
+        <div class="mdui-textfield mdui-p-t-1">
+            <textarea class="mdui-textfield-input" rows="15" id="generatedContent"></textarea>
+        </div>
+    </div>
+    <div class="mdui-dialog-actions mdui-p-t-0">
+        <button class="mdui-btn mdui-ripple" mdui-dialog-close>关闭</button>
+    </div>
+</div>
+
+</body>
+
+</html>
