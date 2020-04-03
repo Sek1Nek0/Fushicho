@@ -6,6 +6,7 @@
     <script src="https://cdn.bootcss.com/mdui/0.4.3/js/mdui.min.js"></script>
     <script type="text/javascript" src="generator/pneumoniaArticle.js"></script>
     <script type="text/javascript" src="generator/CYLApplication.js"></script>
+    <script type="text/javascript" src="generator/ChingMingArticle.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no">
     <meta name="robots" content="noindex, nofollow">
     <meta charset="UTF-8">
@@ -23,6 +24,7 @@
     <div class="mdui-tab mdui-color-theme mdui-tab-centered" mdui-tab="">
         <a href="#pneumoniaArticle" class="mdui-ripple mdui-ripple-white mdui-text-color-white">新冠肺炎征文</a>
         <a href="#CYLApplication" class="mdui-ripple mdui-ripple-white mdui-text-color-white">入团申请书</a>
+        <a href="#ChingMingArticle" class="mdui-ripple mdui-ripple-white mdui-text-color-white">清明节征文</a>
     </div>
 </div>
 
@@ -84,6 +86,40 @@
                                 <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-color-pink mdui-float-right"
                                         mdui-dialog="{target: '#generatedArticleDialog', history: false, modal: true}"
                                         onclick="CYLApplicationGenerated();">
+                                    生成
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="ChingMingArticle">
+    <div class="mdui-container">
+        <div class="mdui-row">
+            <div class="mdui-col-md-6 mdui-col-offset-md-3 mdui-m-t-2">
+                <div class="mdui-card mdui-m-t-0 mdui-m-b-2">
+                    <div class="mdui-card-content mdui-m-t-1 mdui-m-p-0 mdui-p-t-0">
+                        <div class="mdui-row">
+                            <div class="mdui-col-xs-12 mdui-col-sm-12 mdui-m-b-2">
+                                <div class="mdui-textfield mdui-p-t-1 mdui-textfield-not-empty">
+                                    <label class="mdui-textfield-label">文章类型</label>
+                                    <input class="mdui-textfield-input" type="text" value="清明节征文" disabled>
+                                </div>
+                                <div class="mdui-textfield mdui-p-t-1 mdui-textfield-not-empty">
+                                    <label class="mdui-textfield-label" disabled>字数</label>
+                                    <input class="mdui-textfield-input" type="text" value="自动" disabled>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="mdui-row">
+                            <div class="mdui-col-xs-12 mdui-col-sm-12">
+                                <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-color-pink mdui-float-right"
+                                        mdui-dialog="{target: '#generatedArticleDialog', history: false, modal: true}"
+                                        onclick="ChingMingArticleGenerated();">
                                     生成
                                 </button>
                             </div>
